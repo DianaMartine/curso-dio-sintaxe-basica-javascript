@@ -1,1 +1,0 @@
-alert('tudo certo jovem!');
