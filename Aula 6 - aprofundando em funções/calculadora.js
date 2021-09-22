@@ -1,12 +1,12 @@
 /* // criando uma calculadora
 function calculadora() {
-    
+
     // definindo as operações e pegando valor de entrada do usuário
     // usamos "\n" para fazer uma quebra de linha
     const operacao = Number(prompt('Escolha uma opção:\n 1 - soma (+)\n 2 - subtração (-)\n 3 - multiplicação (*)\n 4 - divisão real (/)\n 5 - divisão inteira (%)\n 6 - potenciação (**)'));
-
+    
     // verificando se a operação é válida
-    if (!operacao) {
+    if (!operacao ||  operacao >= 7) {
         alert('erro - operação inválida');
         calculadora();
     } else {
@@ -70,12 +70,14 @@ function calculadora() {
                     calculadora();
                 } else if (opcao == 2) {
                     alert('Até mais!');
+                } else {
+                    alert('Digite uma opção válida!');
+                    novaOperacao();
                 }
             }
         }
     } */
 
-    
     /* // escolhendo operação
     // usand if && else
     if (operacao == 1) {
@@ -91,9 +93,9 @@ function calculadora() {
     } else if (operacao == 6) {
         potenciacao();
     } */
-    
-    // usando switch case
-/*     switch (operacao) {
+
+/*     // usando switch case
+    switch (operacao) {
         case 1:
             soma();
             break;
